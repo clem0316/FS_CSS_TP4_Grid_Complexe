@@ -7,11 +7,9 @@ body {
     "ye ye pu"
     "re gr pu"
     "re pi pi";
+  gap: 15px;
 }
-
-div {
-  margin: 15px;
-}
+/* Le Gap est l'écart entre les éléments d'une div (ici body) */
 
 div:nth-child(1) {
   grid-area: ye;
