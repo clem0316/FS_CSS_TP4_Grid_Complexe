@@ -1,19 +1,35 @@
 body {
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "ye ye pu"
+    "re gr pu"
+    "re pi pi";
+}
+
+div {
+  margin: 15px;
 }
 
 div:nth-child(1) {
+  grid-area: ye;
   background: yellow;
 }
 div:nth-child(2) {
+  grid-area: pu;
   background: purple;
 }
 div:nth-child(3) {
+  grid-area: gr;
   background: green;
 }
 div:nth-child(4) {
+  grid-area: re;
   background: red;
 }
 div:nth-child(5) {
+  grid-area: pi;
   background: orchid;
 }
